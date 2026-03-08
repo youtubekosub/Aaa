@@ -1,0 +1,87 @@
+/* 全体の背景 */
+QMainWindow {
+    background-color: #dee1e6;
+}
+
+/* ツールバー（アドレスバー周辺） */
+QToolBar {
+    background-color: white;
+    border: none;
+    padding: 4px;
+    spacing: 8px;
+    border-bottom: 1px solid #bdc1c6;
+}
+
+/* アドレスバー（Omnibox） */
+QLineEdit {
+    background-color: #f1f3f4;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    padding: 6px 15px;
+    color: #202124;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 13px;
+    min-width: 600px;
+}
+
+QLineEdit:focus {
+    background-color: white;
+    border: 2px solid #1a73e8;
+    box-shadow: 0 1px 2px rgba(60,64,67,0.3);
+}
+
+/* タブバー */
+QTabWidget::pane {
+    border: none;
+    background: white;
+}
+
+QTabBar::tab {
+    background: #dee1e6;
+    color: #5f6368;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 8px 30px;
+    margin-top: 5px;
+    margin-left: 2px;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+}
+
+QTabBar::tab:selected {
+    background: white;
+    color: #1a73e8;
+}
+
+QTabBar::close-button {
+    image: none; /* デフォルトを消去 */
+    background-color: transparent;
+    subcontrol-origin: margin;
+    subcontrol-position: right;
+}
+
+/* カスタムボタン（CSSで描画を制御） */
+QPushButton {
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: transparent;
+    color: #5f6368;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+QPushButton:hover {
+    background-color: #f1f3f4;
+}
+
+/* 進捗バー */
+QProgressBar {
+    border: none;
+    background-color: transparent;
+    height: 2px;
+}
+
+QProgressBar::chunk {
+    background-color: #1a73e8;
+}
